@@ -1,205 +1,429 @@
 <html>
+
 <head>
-    <title>ORHANCAN YILDIRIM</title>
-    <link rel="icon" href="icons8-tools-64.png">
+    <title> Orhancan Yıldırım</title>
+    <link rel="icon" href="C:\Users\MU$TA ORHAN\Desktop\web sayfa img\icons8-tools-64.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/27d4fde6c0.js" crossorigin="anonymous"></script>
+   
     <style>
-    * {
-    box-sizing: border-box;
-    }
-    body {margin: 0;}
-     body{
-       background-size: 100% 100%;
-     }
-    .header {
-
-    padding: 5px;
-    text-align: center;
-    background: #00000000;
-    color: #ddc488;   /*sayfama hoşgeldiniz*/
-    }
-    .stong{
-      font-size: "5000";
-    }
-    .navbar {
-    overflow: hidden;
-    background-color: #00000000;
-    text-align: center;
-    }
-    .navbar a {
-
-   
-    text-decoration: none;
-    color: #ddc488;  /*finance dATA SCİENCE FALAN UST BARDAKİLER*/
-    text-align: center;
-    padding: 10px 10px;
-    }
-    #sıra li{
-      list-style: none;
-    display: inline-block;
-    
-    }
-   
-    .navbar a:hover{
-    background-color: rgb(255 240 245	);
-    color: rgb(0, 0, 0); /*link üstüne gelince renk değişir*/
-    }
-    .row {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    
-    .main {
-     
-    flex: 90%;
-    background-color: #e8e8e800;
-    color: rgb(217, 217, 217);
-    padding: 125px;
-    font-size: 20;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    .main h1{
-      text-align: center;
-      color: #ddc488;
-      margin-top: 50px;
-    }
-    .sol{
-      
-      margin: 100px;;
-      padding: 100px;
-      display:inline-flex;
-      line-height: 40px;
-}
-    .sag{
-      position: absolute;
-      right: 10;
-      display:inline-flex;
- }
- .ben{
-    width: 900px;
-    margin-top: -150px;
-    
-    
-    }
-    .ben img{
-      float:left;
-      padding: 0 10px 10px 0;
-      margin-top: 17px;
-    }
-   
-    .logoimg {
-   width: 100;
-   height: 100;
-   position: absolute;
-      left: 20px;
-      top: 10px;
-    }
-  
-     
-    .footer {
-     
-    position: static;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 115px;
-    padding:15px;
-    background-color: #00000000;
-        color:#ddc488;
-        text-align: center;
-}
-  .footer img{
-    opacity: 1;
-    transition: all 0.75s;
-  }
-  .footer img:hover{
-    opacity: 0.5;
-    transform: rotate(360deg);
-  }
-    .alt{
        
-        background-color: rgb(37, 36, 36);
-        color: blanchedalmond;
-        text-align: center;
-    }
-    .social-icons {
-  text-align: center;
-  }  
-.social-icons li {
-  display:inline-block;
-  list-style-type:none;
+       .carousel-inner img {
+              width: 100%;
+              height: 100%;
   }
+        body {
+            padding-top: 50px;
+        }
+        .hakkimizda{
+            background-color: #dedede;
+        }
+        .cizgi{
+            border: none;
+            border-top: 3px solid #050606;
+            max-width: 250px;
+            margin: 25px auto;
+        }
+        .igri{
+            color:#050606;
+            position: relative;
+            top: -55px;
+            font-size: 40px;
+            border: 10px solid #dedede;
+            background-color: #dedede;
+            
+        }
+        .ibeyaz{
+            color:#050606;
+            position: relative;
+            top: -55px;
+            font-size: 40px;
+            border: 10px solid #ffff;
+            background-color: #ffff;
 
+        }
+       
 
-.social-icons li a {
-  border-bottom: none;
-  }
-.social-icons li img {
-  width: 30px;
-  height:30px;
-  margin-right: 15px;
+        .iletisim{
+            background-color: #dedede;
+        }
+        .takipedin{
+            padding-left: 100px;
+        }
+        #footer{
+            margin-bottom: 0px;
+            padding-bottom: 0%;
+        }
+        /*progres bar b*/
+        .progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px
 }
-#baslık{
-font-size: 50px;
+
+.progress {
+    height: 20px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
 }
-#baslık2{
-  font-size: 20px;
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s
 }
- .iframe{
-   color: #ddc488;
-   text-align: center;
- }
+
+.progress .progress-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: -30px;
+    right: -25px
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+}
+
+h1 {
+    text-align: center
+}
+
+body {
+    background: #fff;
+}
+/*back to top butonu */
+.back-to-top {
+ position: fixed;
+ bottom: 30px;
+ right: 30px;
+ width: 64px;
+ height: 64px;
+ z-index: 9999;
+ cursor: pointer;
+ text-decoration: none;
+ transition: opacity 0.2s ease-out;
+ background-image: url(top.png);
+}
+.back-to-top:hover{
+ opacity: 0.7;
+}
+/*progre bar s*/
     </style>
-   
+    <script>$(document).ready(function () {
+        $('#carousel').carousel({
+          interval: 2000
+        })
+        $('#carousel').carousel('pause')
+
+        
+      });
+</script>
+<script>
+    $(document).ready(function(){
+ 
+ //Check to see if the window is top if not then display button
+ $(window).scroll(function(){
+  // Show button after 100px
+  var showAfter = 100;
+  if ($(this).scrollTop() > showAfter ) { 
+   $('.back-to-top').fadeIn();
+  } else { 
+   $('.back-to-top').fadeOut();
+  }
+ });
+ 
+ //Click event to scroll to top
+ $('.back-to-top').click(function(){
+  $('html, body').animate({scrollTop : 0},800);
+  return false;
+ });
+ 
+});
+
+</script>
 </head>
-       <body bottommargin="cover" bgcolor="black" background="istockphoto-1315819475-170667a.jpg">
-         <header>
-        <div class="header">
-          <h1 id="baslık">Orhancan Yıldırım| <span id="baslık2">personal page</span></h1>
-          <hr width="550" color="#ddc488">
+
+<body>
+    <!--menü başı-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">ORHANCAN YILDIRIM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#demo">ANASAYFA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hakkimizda">HAKKIMDA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#port">PORTFOLİO</a>
+              
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#iletisim">İLETİŞİM</a>
+                </li>
+
+            </ul>
         </div>
-      
-      </header>
+    </nav>
+    <!--menü sonu-->
 
-    <div  class="navbar">
-    <ul id="sıra">
-      <li><a href="C:\Users\MU$TA ORHAN\Documents\C belgeleri kayıtları\asılsayfambu.html"><b>Anasayfa</b></a></li>
-        <li><a href="#alt"><b>Hakkımda</b></a></li>
-    <li><a href=""><b>Projelerim</b></a></li>
-    <li><a href=""><b>Blog</b></a></li>
-    <li><a href="mailto:orhancan_yıldırım01@gmail.com"><b>Bana Ulaşın</b></a></li>
-  </ul>
-    </div>
-   <hr width="550" color="#ddc488">
+    <!--slider b-->
+   
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
     
-    <div class="main">
-        <div id="alt"></div>
-     
-      <h1>BEN KİMİM ?</h1>
-    <div class="sol">
-      
-      <div  class="ben">
-        <img width="20%" src="Screenshot_20220417-052009_Gallery.jpg" alt="">
-      <p>Merhaba, ben Orhancan Yıldırım. 2002 Adana / Seyhan doğumluyum.İnönü Üniversitesi Yazılım Mühendisliği bölümünde 1. sınıf öğrencisiyim.Yurt dışı projeleri ile Amerika'ya gitmek ve eğitimime orada devam etmek istiyorum.Hayalim dünyayı gezmek ve yeni insanlar tanımak.Eğer Amerikaya gidebilirsem hayallerimi gerçekleştirmeye başlamış olacağım.üniversite bitene kadar ki 4 yıl için bazı projelerim var ve  yazılım hayatıma bu projelerle başlamak istiyorum. Eminim ki yaptığım her proje beni bir adım yukarı taşıyacaktır.Şu an acemi olablirim ama böyle kalmayacağım.</p>
-    </div></div>
-    <div class="sag">
-  </div></div>
-<div class="iframe">
-  <h1>Eğitim Aldığım Üniversite</h1>
-</div>
-<hr width="350" color="#ddc488">
-
- <div align="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/eho3YtI7usM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-    </body>
-  <footer>
-    <div class="footer">
-      <h2>Beni Takip Edin</h2>
-      <ul class="social-icons">
-          <li><a  id="instagram" target="blank" href="http://www.instagram.com"><img src="icons8-instagram-50.png" /></a></li>
-          <li><a target="blank" href="http://www.twitter.com"><img src="icons8-twitter-50.png" /></a></li>
-          <li><a target="blank" href="http://www.linkedin.com"><img src="icons8-linkedin-50.png"/></a></li>
-      </ul>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="C:\Users\MU$TA ORHAN\Documents\C belgeleri kayıtları\HTML\ödev resimler\3.webp"alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\MU$TA ORHAN\Documents\C belgeleri kayıtları\HTML\ödev resimler\1.jpg"alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="C:\Users\MU$TA ORHAN\Documents\C belgeleri kayıtları\HTML\ödev resimler\0.jpg"alt="New York" width="1100" height="500">
+      </div>
     </div>
-  </footer>  
-  </html>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+    <!--slider s-->
+
+    <!--hakkımızda b-->
+
+    <section class="p-5 text-center hakkimizda" id="hakkimizda">
+        <div class="container">
+
+            <h2 class="mb-5 font-weight-bold">HAKKIMDA</h2>
+          
+            <hr  class="cizgi" color="#050606"><i class="fa-solid fa-code igri"></i>
+
+            <p>Merhaba, ben Orhancan Yıldırım. 2002 Adana / Seyhan doğumluyum.İnönü Üniversitesi Yazılım Mühendisliği
+                bölümünde 1. sınıf öğrencisiyim.Yurt dışı projeleri ile Amerika'ya gitmek ve eğitimime orada devam etmek
+                istiyorum.Hayalim dünyayı gezmek ve yeni insanlar tanımak.Eğer Amerikaya gidebilirsem hayallerimi
+                gerçekleştirmeye başlamış olacağım.üniversite bitene kadar ki 4 yıl için bazı projelerim var ve yazılım
+                hayatıma bu projelerle başlamak istiyorum. Eminim ki yaptığım her proje beni bir adım yukarı
+                taşıyacaktır.Şu an acemi olablirim ama böyle kalmayacağım.</p>
+
+                
+        </div>
+
+        <p class="text-center"><h1>CV'Mİ İNCELEMEK İÇİN İNDİRİN LÜTFEN </h1></p>
+        <button class="btn btn-outline-info" onclick="mycv()">CV</button>
+        
+
+
+        <div>
+            <h1 class="mb-5 mt-5"> ÖĞRENDİĞİM DİLLERDE Kİ UZMANLIK SEVİYELERİM</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="progress-title">HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:65%; background:#97c513;">
+                            <div class="progress-value">65%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">C</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:100%; background:#f2545b;">
+                            <div class="progress-value">100%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">JAVASCRIPT</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:75%; background:#b239ea;">
+                            <div class="progress-value">75%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">BOOTSTRAP</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:30%; background:#21b1ff;">
+                            <div class="progress-value">30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--hakkımızda s-->
+
+    <!--portfolio b-->
+
+    <section  class="p-5 text-center portfolio" id="port">
+
+        <div class="container">
+            <h2 class="mb-5 font-weight-bold">PORTFOLİO</h2>
+          
+            <hr  class="cizgi" color="#050606"><i class="fa-solid fa-code ibeyaz"></i>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">proje ismi</th>
+                    <th scope="col">kullanılan Dil</th>
+                    <th scope="col">Tarih</th>
+                  </tr>
+                </thead>
+                <tbody id="liste">
+                    <tr>
+                        <td>orhancanyildirim.github.io</td>
+                        <td>HTML,CSS,JAVASCRIPT</td>
+                        <td>17-04-2002</td>
+                      </tr>
+                  
+                </tbody>
+              </table>
+
+              <div class="input-group">
+                <span class="input-group-text">Projeyi Giriniz</span>
+                <input type="text" aria-label="Proje İsim" placeholder="Proje İsmi" id="isim" class="form-control">
+                <input type="text" aria-label="Kullanılan Dil" placeholder="Kullanılan Dil" id="dil" class="form-control">
+                 <input type="date" aria-label="Tarih" placeholder="Tarih" id="tarih" class="form-control">
+                
+                    <button class="btn bg-success text-white" onclick="projeekle()">EKLE</button>
+              </div>
+        </div>
+
+    </section>
+
+    <!--portfolio s-->
+
+    <!--iletişim b-->
+    <section class="p-5 text-center iletisim" id="iletisim">
+
+        <div class="container">
+            <h2 class="mb-5 font-weight-bold">İLETİŞİM</h2>
+          
+            <hr  class="cizgi" color="#050606"><i class="fa-solid fa-code igri"></i>
+
+            <form action="" class="col-md-10 text-left m-auto">
+
+                <div class="row">
+                    <div class="col-6">
+                <div class="form-group row">
+                    <label for="" class="col-md-4 align-self-center">Ad:</label>
+                    <input type="text" class="form-control col-md-8 ">
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-md-4 align-self-center">SoyAd:</label>
+                    <input type="text" class="form-control col-md-8 ">
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-md-4 align-self-center">Email:</label>
+                    <input type="email" class="form-control col-md-8 ">
+                </div>
+                <div class="form-group row">
+                    <label for="" class="col-md-4 align-self-center">Mesajınız:</label>
+                 <textarea name="" id="" cols="30" rows="10" class="form-control col-md-8"></textarea>
+                </div>
+                <div class="form-group row">
+                    <button type="submit" class="col-md-3 btn btn-primary align-center">GÖNDER</button>
+                </div>
+            </div>
+            <div class="col-6 text-end ">
+                <h2>Beni Takip Edin</h2>
+                <ul class="social-icons">
+                  <li><a id="instagram" target="blank" href="http://www.instagram.com"><img
+                        src="C:\Users\MU$TA ORHAN\Downloads\icons8-instagram-old-100.png" /></a></li>
+                  <li><a target="blank" href="http://www.twitter.com"><img
+                        src="C:\Users\MU$TA ORHAN\Downloads\icons8-twitter-100 (1).png" /></a></li>
+                  <li><a target="blank" href="http://www.linkedln.com"><img
+                        src="C:\Users\MU$TA ORHAN\Downloads\icons8-linkedin-100.png"/></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+            </form>
+
+        </div>
+        <a href="#" class="back-to-top" ><img src="C:\Users\MU$TA ORHAN\Downloads\icons8-arrow-64.png" alt=""></a>
+    </section>
+
+    <!-- iletişim s-->
+    <!--footer b-->
+    
+    <div id="footer" class="bg-dark text-light text-center mb-0">
+        <p class="align-middle p-5 mb-0">
+            <span>Tüm haklar saklıdır &copy; | 2022 </span> <br>
+            <span>Desing by <h2>Orhancan YILDIRIM</h2></span>
+        </p>
+    </div>
+
+
+    <!--footer s-->
+        <script src="custom.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <!--jspdf-->
+    <script     src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+    <script> 
+    function mycv() {
+        var bilgilers = [
+            {"yazi":"   Ben Orhancan Yildirim 26 ocak 2002 de Adanada dogdum. Inonu Universitesi\n Yazilim Muhendisligi  Bolumu ogrencisiyim, lise egitimimi Abbas Sidika Calik\n Anadolu lisesinde tamamladim. Suan da cesitli yazilim dilleri ogrenmekteyim.\n Bunlara ornek vermek gerekirse;'C,java,JavaScript,CSS,HTML' bu dillerin\n basinda geliyor. Daha once herhangi bir is deneyimim olmadi fakat Oldukca\n sorumluluk sahibi, yapmasi gereken görevi elinden geldigince yapmaya calisan\n birisiyimdir bu sebeple de ekip islerinde oldukca basarili olabilecegime inaniyorum.\n Saygilarimla.    "},
+      
+                ];
+ 
+            var doc = new jsPDF();
+                bilgilers.forEach(function(bilgiler, i){
+                    doc.setFontSize(17);
+                    doc.setFontStyle('Arial');
+                 doc.text(5, 10 + (i * 10),
+                    "\n " + bilgiler.yazi + "\n ");
+                }   );
+                        doc.save('Test.pdf');
+            }
+
+</script>
+</html>
